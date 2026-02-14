@@ -104,3 +104,59 @@ select {
   font-size: 0.8rem;
   color: #475569;
 }
+
+/* ===========================
+   RESPONSIVE (MOBILE & TABLET)
+   =========================== */
+
+/* Tablets */
+@media (max-width: 900px) {
+  .calendar {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .weekdays {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .weekdays div:nth-child(n+5) {
+    display: none;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 1.6rem;
+  }
+
+  .header p {
+    font-size: 0.9rem;
+  }
+
+  .calendar {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .weekdays {
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 0.75rem;
+  }
+
+  /* Show only relevant weekday labels */
+  .weekdays div {
+    padding: 8px 0;
+  }
+
+  .day {
+    min-height: 120px;
+  }
+
+  select {
+    width: 90%;
+    max-width: 320px;
+  }
+}
+
+
