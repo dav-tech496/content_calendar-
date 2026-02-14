@@ -12,9 +12,9 @@ const weeklySchedule = {
   2: { text: "Motion TikTok", type: "campaign" },             // Tuesday
   3: { text: "Adventure 1 · Content 1", type: "brand" },      // Wednesday
   4: { text: "TikTok Photo", type: "campaign" },              // Thursday
-  5: { text: "Adventure · Travel & Tour", type: "launch" },  // Friday
+  5: { text: "Adventure · Travel & Tour", type: "brand" },  // Friday
   6: { text: "—", type: "" },                                 // Saturday
-  0: { text: "Content Detail · Photo · TikTok", type: "brand" } // Sunday
+  0: { text: "—", type: ""},
 };
 
 // Populate month dropdown
